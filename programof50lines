@@ -1,0 +1,55 @@
+menus={
+    "1. biriyani":100,
+    "2. dhosa":50, 
+    "3. idli":50, 
+    "4. fried rice":60
+    }
+print(menus)
+your_order = int(input("Enter your order: "))
+
+if your_order == 1:
+    print("Thanks for choosing biriyani")
+    quantity = int(input("Enter the quantity: "))
+    total = menus["1. biriyani"]*quantity
+    if total > 500:
+        total= total-100
+        print("flat 100 rupees discount for more than 500 rupees order...!")
+    else:
+        print("discount is not applicable...!")
+    print("Total bill of your order: ", total)
+
+elif your_order == 2:
+    print("Thanks for choosing dhosa")
+    quantity = int(input("Enter the quantity: "))
+    total = menus["2. dhosa"]*quantity
+    if total > 500:
+        total= total-100
+        print("flat 100 rupees discount for more than 500 rupees order...!")
+    else:
+        print("discount is not applicable...!")
+    print("Total bill of your order: ", total)
+
+elif your_order == 3:
+    print("Thanks for choosing idli")
+    quantity = int(input("Enter the quantity: "))
+    total = menus["3. idli"]*quantity
+    if total > 500:
+        total= total-100
+        print("flat 100 rupees discount for more than 500 rupees order...!")
+    else:
+        print("discount is not applicable...!")
+    print("Total bill of your order: ", total)
+
+elif your_order == 4:
+    print("Thanks for choosing fried rice")
+    quantity = int(input("Enter the quantity: "))
+    total = menus["4. fried rice"]*quantity
+    if total > 500:
+        total= total-100
+        print("flat 100 rupees discount for more than 500 rupees order...!")
+    else:
+        print("discount is not applicable...!")
+    print("Total bill of your order: ", total)
+
+else:
+    print("Please chosse appropriate number")
